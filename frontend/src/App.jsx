@@ -8,6 +8,7 @@ import useApplicationData from 'hooks/useApplicationData';
 const App = () => {
 
   const { state, actions } = useApplicationData();
+  
   const { selectedPhoto, favorites, modalOpen } = state;
 
   const { 
