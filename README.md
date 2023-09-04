@@ -1,5 +1,6 @@
 # react-photolabs
-The PhotoLabs project for the Web Development React course programming.
+
+PhotoLabs is an app that allows users to organize and store their favorite photos according to category
 
 # Photolabs
 
