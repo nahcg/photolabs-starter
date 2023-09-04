@@ -4,15 +4,21 @@ import FavIcon from './FavIcon';
 import '../styles/PhotoFavButton.scss';
 
 function PhotoFavButton(props) {
-  const [selected, notSelected] = useState(false);
-  const handleEvent = () => notSelected(false ? selected === true : selected === false);
+  const toggleFavoritePhoto = () => {
+    props.toggleFavorite(props.photoId)
+  }
+  const colorCheck = props.favorites.includes(props.photoId)
+  console.log(props)
+
   return (
-    <div className="photo-list__fav-icon">
-      <div className="photo-list__fav-icon-svg" onClick={handleEvent}>
-        <FavIcon selected={selected} />
+    <div className="photo-list__fav-icon" onClick={toggleFavoritePhoto}>
+      <div className="photo-list__fav-icon-svg">
+        <FavIcon
+          selected={colorCheck} />
       </div>
     </div >
   );
 }
+
 
 export default PhotoFavButton;

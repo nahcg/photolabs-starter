@@ -1,7 +1,6 @@
 import React from "react";
 
 import "../styles/TopicList.scss";
-import topicData from "topicData";
 import TopicListItem from "./TopicListItem";
 
 const TopicList = (props) => {
@@ -13,6 +12,8 @@ const TopicList = (props) => {
         key={topic.id}
         slug={topic.slug}
         title={topic.title}
+        id={topic.id}
+        getPhotosByTopic={props.getPhotosByTopic}
       />)
   })
 
