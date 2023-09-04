@@ -3,7 +3,7 @@
   margin-left: 24px;
 }
 
-.topic-list__item span {
+.topic-list__item-title {
   font-size: 18px;
   text-decoration: none;
   font-weight: 500;
@@ -12,5 +12,6 @@
   &:hover {
     text-decoration: overline;
     color: #111;
+    cursor: pointer;
   }
 }
