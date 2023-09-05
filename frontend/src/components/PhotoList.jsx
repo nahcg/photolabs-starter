@@ -8,7 +8,7 @@ function PhotoList(props) {
   const photos = props.photoData.map(photo => {
     const openModalClick = () => {
       props.openModal(true);
-      props.setSelectedPhoto(props.photo.id);
+      props.setSelectedPhoto(props.photo);
     };
     return (
       <PhotoListItem

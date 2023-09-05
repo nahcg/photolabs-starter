@@ -7,7 +7,7 @@ import "../styles/PhotoListItem.scss";
 function PhotoListItem(props) {
   const openModalClick = () => {
       props.openModal(true);
-      props.setSelectedPhoto(props.photo.id);
+      props.setSelectedPhoto(props.photo);
     };
   return (
     <div className="photo-list__item" >
