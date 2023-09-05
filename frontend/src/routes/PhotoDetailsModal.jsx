@@ -7,6 +7,10 @@ import '../styles/PhotoDetailsModal.scss'
 import closeSymbol from '../assets/closeSymbol.svg';
 
 function PhotoDetailsModal(props) {
+  const openModalClick = () => {
+    props.openModal(true);
+    props.setSelectedPhoto(props.photo.id);
+  };
   return (
     <div className="photo-details-modal">
       <button className="photo-details-modal__close-button" onClick={props.closeModal}>
@@ -43,6 +47,7 @@ function PhotoDetailsModal(props) {
           setSelectedPhoto={props.setSelectedPhoto}
           modalOpen={props.modalOpen}
           selectedPhoto={props.selectedPhoto}
+          openModalClick={openModalClick}
         />
       </div>
     </div >

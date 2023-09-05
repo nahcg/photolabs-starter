@@ -7,6 +7,10 @@ import "../styles/PhotoList.scss";
 // eslint-disable-next-line func-style
 function PhotoList(props) {
   const photos = props.photoData.map(photo => {
+    const openModalClick = () => {
+      props.openModal(true);
+      props.setSelectedPhoto(props.photo);
+    };
     return (
       <PhotoListItem
         key={photo.id}
@@ -18,6 +22,7 @@ function PhotoList(props) {
         toggleFavorite={props.toggleFavorite}
         modalOpen={props.modalOpen}
         selectedPhoto={props.selectedPhoto}
+        openModalClick={openModalClick}
       />)
   })
 
