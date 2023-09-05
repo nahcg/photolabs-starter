@@ -3,6 +3,7 @@ import React from "react";
 import "../styles/TopicList.scss";
 import TopicListItem from "./TopicListItem";
 
+// map individual topic in navbar
 const TopicList = (props) => {
 
   const topics = props.topicData.map(topic => {

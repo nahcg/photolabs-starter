@@ -3,6 +3,7 @@ import React, { useCallback, useState } from 'react';
 import FavIcon from './FavIcon';
 import '../styles/PhotoFavButton.scss';
 
+// turns red if selectedPhoto exists in favorites array
 function PhotoFavButton(props) {
   const toggleFavoritePhoto = () => {
     props.toggleFavorite(props.photoId)
