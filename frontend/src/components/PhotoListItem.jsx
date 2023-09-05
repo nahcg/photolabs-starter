@@ -3,10 +3,11 @@ import React from "react";
 import PhotoFavButton from "./PhotoFavButton";
 import "../styles/PhotoListItem.scss";
 
+//renders each individual photo
 function PhotoListItem(props) {
   const openModalClick = () => {
       props.openModal(true);
-      props.setSelectedPhoto(props.photo);
+      props.setSelectedPhoto(props.photo.id);
     };
   return (
     <div className="photo-list__item" >

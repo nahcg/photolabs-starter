@@ -4,12 +4,11 @@ import PhotoListItem from "./PhotoListItem"
 import "../styles/PhotoList.scss";
 
 //pass down photo which holds whole object, destructure in child PhotoListItem
-// eslint-disable-next-line func-style
 function PhotoList(props) {
   const photos = props.photoData.map(photo => {
     const openModalClick = () => {
       props.openModal(true);
-      props.setSelectedPhoto(props.photo);
+      props.setSelectedPhoto(props.photo.id);
     };
     return (
       <PhotoListItem

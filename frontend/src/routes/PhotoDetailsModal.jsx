@@ -6,6 +6,7 @@ import PhotoFavButton from 'components/PhotoFavButton';
 import '../styles/PhotoDetailsModal.scss'
 import closeSymbol from '../assets/closeSymbol.svg';
 
+//renders the photo modal for selected photo
 function PhotoDetailsModal(props) {
   const openModalClick = () => {
     props.openModal(true);
