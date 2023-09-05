@@ -4,6 +4,8 @@ PhotoLabs is an app that allows users to organize and store their favorite photo
 
 # Photolabs
 
+https://github.com/nahcg/photolabs-starter/assets/25202164/5172a7e1-a571-4136-b828-59eb332c587e
+
 ## Setup
 
 Install dependencies with `npm install` in each respective `/frontend` and `/backend`.
